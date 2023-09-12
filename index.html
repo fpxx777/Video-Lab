@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VideoLab</title>
+    <link rel="shortcut icon" href="assets/YouTube-Transparent-PNG.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body> <!-- top navigation -->
+    <div class="top">
+        <div class="nav-container">
+            <h1>VideoLab</h1> <input type="text" placeholder="Search" name="query" class="search"> <button
+                class="btn">Login</button>
+        </div>
+    </div> <!-- main content -->
+    <div class="flex-container"> <!-- left column -->
+        <div class="col-l"> <!-- this is a placeholder replace it with a real video -->
+            <figure class="placeholder"> <video onclick="playvid()" id="vid" style="text-anchor:middle;" width="720"
+                    height="400" xmlns="http://www.w3.org/2000/svg" role="video">
+                    <source src="assets/Happy Monkey Circle 1 hour (240p).mp4" type="video/mp4">
+                </video>
+                <div class="info-video"> <button onclick="playvid()"><img id="iconPlay" src="assets/play.png"
+                            alt="Error"></button> <button><img
+                            src="assets/expand-flat-color-outline-icon-free-png (1).webp" alt=""></button> </div>
+            </figure> <!-- video info -->
+            <div class="row">
+                <div class="start">
+                    <h1>Happy Monke Circle</h1>
+                    <h3>1.3K Views | June, 18, 2021</h3>
+                    <div class="user"> <img src="assets/fat-gumball-modified.png" alt="user-circle" class="avatar-s">
+                        <span class="user-name">Gordo Bugs</span> </div>
+                </div> <button class="btn">Subscribe</button>
+            </div>
+        </div> <!-- right column -->
+        <div class="col-r">
+            <h3 class="sub-header">Up Next</h3>
+            <div class="video-small" onmouseenter="aprevisual(this)" onmouseleave="aprevisual2(this)">
+                <div class="previ" id="nose"> <img class="img-video" class="vid-s" src="assets/video-placeholder.png"
+                        style="background-image: url(assets/630fa73b77d6a.jpeg);"> </div> <span class="video-title">Not
+                    a Rick Roll</span>
+            </div>
+            <div class="video-small" onmouseenter="bprevisual(this)" onmouseleave="bprevisual2(this)">
+                <div class="previ" id="nose2"> <img class="img-video" src="assets/video-placeholder.png"
+                        style="background-image: url(assets/Monke.webp);" alt="video placeholder" class="vid-s"> </div>
+                <span class="video-title">Monke Spinning</span>
+            </div>
+            <div class="video-small" onmouseenter="cprevisual(this)" onmouseleave="cprevisual2(this)">
+                <div id="nose3"> <img class="img-video" src="assets/video-placeholder.png"
+                        style="background-image: url(assets/fishing.png);" alt="video placeholder" class="vid-s"> </div>
+                <span class="video-title">Monke Fishing</span>
+            </div>
+            <div class="video-small" onmouseenter="dprevisual(this)" onmouseleave="dprevisual2(this)">
+                <div id="nose4"> <img class="img-video" src="assets/video-placeholder.png" alt="video placeholder"
+                        style="background-image: url(assets/swim.png);" class="vid-s"> </div> <span
+                    class="video-title">Monke Swim</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
